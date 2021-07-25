@@ -1,0 +1,158 @@
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../fonts/WorkSans-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-display: swap;
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    background: #000;
+    font-family: "Open Sans";
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+    color: unset;
+}
+
+ul {
+    padding-inline-start: 0 !important;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+header {
+    margin: 1rem 0;
+}
+
+.nav-item {
+    margin: 0 1rem;
+}
+
+.nav-item a {
+    font-family: "Open Sans";
+    font-size: 18px;
+    color: #fff !important;
+}
+
+.btn-download a {
+    color: #00AFBB !important;
+}
+
+.btn-download,
+.btn-download:hover,
+.btn-download:active,
+.btn-download:visited,
+.btn-download:focus {
+    /* background: #e32526; */
+    background-color: transparent !important;
+    border: 2px solid #00AFBB !important;
+    outline-color: #00AFBB !important;
+    border-radius: 5px;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important; */
+}
+
+.btn-main-yam,
+.btn-main-yam:hover,
+.btn-main-yam:active,
+.btn-main-yam:visited,
+.btn-main-yam:focus {
+    /* background: #00AFBB; */
+    background-color: #00AFBB !important;
+    border-color: #00AFBB !important;
+    outline-color: #00AFBB !important;
+    border-radius: 5px;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important; */
+}
+
+.item-dot {
+    height: 25px;
+}
+
+.nav-item-dot {
+    display: inline-block;
+    background-color: #00AFBB;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin: 0 0.5rem;
+}
+
+.navbar-toggler,
+.navbar-toggler:active,
+.navbar-toggler:visited,
+.navbar-toggler:focus {
+    border: none !important;
+    outline: none !important
+}
+
+.navbar-toggler .close-icon {
+    display: inline;
+}
+
+.navbar-toggler.collapsed .close-icon,
+.navbar-toggler:not(.collapsed) .toggler-icon {
+    display: none;
+}
+
+
+/* FOOTER */
+
+footer {
+    padding: 1rem 0;
+}
+
+.footer-text-col-title {
+    color: #fff;
+    font-weight: 700;
+}
+
+#footer--about {
+    padding: 0 15px;
+}
+
+footer a,
+footer li {
+    color: #fff;
+    margin: 1rem 0;
+    font-weight: 300 !important;
+}
+
+.footer-item-dot {
+    display: inline-block;
+    background-color: #00AFBB;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .navbar-collapse li {
+        margin: 0.5rem 0 !important;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .footer-item-dot {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media screen and (max-width: 576px) {}
