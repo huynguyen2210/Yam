@@ -186,6 +186,54 @@ header {
     font-weight: 600;
 }
 
+.intro-video {
+    background: linear-gradient(180deg, #00AFBB 0%, #0BBAFF 100%);
+}
+
+.intro-video-player {
+    position: relative;
+    padding: 6rem 0;
+}
+
+.intro-video-player video {
+    display: block;
+    width: 50%;
+    height: auto;
+    margin: auto;
+    border: 15px solid #004650;
+    border-radius: 25px;
+}
+
+.main-intro-info {
+    background-color: #000;
+}
+
+.intro-info-1-article *,
+.intro-info-2-article * {
+    margin: 1.5rem 0;
+}
+
+.intro-info-1-article h1,
+.intro-info-2-article h1 {
+    font-family: "Work Sans";
+    font-size: 50px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.intro-info-1-article h1 span,
+.intro-info-2-article h1 span {
+    color: #00AFBB;
+}
+
+.intro-info-1-article p,
+.intro-info-2-article p {
+    font-family: "Open Sans";
+    font-size: 24px;
+    font-weight: 300;
+    color: #fff;
+}
+
 
 /* FOOTER */
 
