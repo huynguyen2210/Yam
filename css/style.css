@@ -140,18 +140,20 @@ header {
 
 /* MAIN */
 
+
+/* HOME PAGE */
+
 .banner {
     background: url(../images/home-banner-bg.jpg) center no-repeat;
     /* max-width: 100%; */
     height: 100vh;
     background-size: cover;
-    padding: 6rem 0;
 }
 
 .banner-main-content {
     font-family: "Work Sans Bold";
     font-weight: 700;
-    font-size: 50px;
+    font-size: 60px;
     color: #000;
     line-height: 1.5;
     margin-bottom: 2rem;
@@ -380,6 +382,12 @@ header {
 }
 
 
+/* END HOME PAGE */
+
+
+/* ABOUT PAGE */
+
+
 /* FOOTER */
 
 footer {
@@ -410,6 +418,22 @@ footer li {
     height: 40px;
     border-radius: 50%;
     margin-right: 0.5rem;
+}
+
+@media screen and (min-width: 1440px) {
+    .banner-main-content {
+        font-size: 72px;
+    }
+    .intro-info-1-text h1,
+    .intro-info-2-text h1 {
+        font-size: 64px;
+    }
+    .get-started-main-content {
+        font-size: 72px;
+    }
+    .lastest-content h1 {
+        font-size: 48px;
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -477,7 +501,6 @@ footer li {
     .dropdown-item-content {
         margin: 0 10px;
     }
-    .banner,
     .intro-video,
     .main-intro-info,
     .get-started,
