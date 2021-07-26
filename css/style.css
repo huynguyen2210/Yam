@@ -42,9 +42,16 @@ ul li {
     list-style-type: none;
 }
 
+.black-bg {
+    background-color: #000;
+}
+
+.yam-bg {
+    background: linear-gradient(180deg, #00AFBB 0%, #0BBAFF 100%);
+}
+
 header {
     padding: 1.5rem 0;
-    background-color: #000;
 }
 
 .nav-item {
@@ -187,13 +194,11 @@ header {
 
 .intro-video,
 .get-started {
-    background: linear-gradient(180deg, #00AFBB 0%, #0BBAFF 100%);
     padding: 6rem 0;
 }
 
 .main-intro-info,
 .lastest-content {
-    background-color: #000;
     padding: 6rem 0;
 }
 
@@ -203,7 +208,7 @@ header {
 
 .intro-video-player video {
     display: block;
-    width: 70%;
+    width: 771px;
     height: auto;
     margin: auto;
     border: 15px solid #004650;
@@ -255,16 +260,18 @@ header {
     border-radius: 50%;
     position: absolute;
     top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     z-index: 0;
 }
 
 .intro-info-1-img img {
     position: absolute;
     top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     z-index: 1;
 }
 
@@ -391,7 +398,6 @@ header {
 /* FOOTER */
 
 footer {
-    background-color: #000;
     padding: 1rem 0;
 }
 
@@ -440,6 +446,9 @@ footer li {
     .navbar-collapse li {
         margin: 0.5rem 0 !important;
     }
+    .intro-video-player video {
+        width: 681px;
+    }
     .intro-info-2-img-dot {
         left: 2%;
     }
@@ -449,10 +458,6 @@ footer li {
 }
 
 @media screen and (max-width: 992px) {
-    .footer-item-dot {
-        width: 30px;
-        height: 30px;
-    }
     .dropdown-menu {
         height: 50px;
     }
@@ -460,20 +465,15 @@ footer li {
         width: 40px;
         height: 40px;
     }
+    .intro-video-player video {
+        width: 80%;
+    }
     .intro-info-1-img {
         height: 570px;
     }
     .intro-info-1-img-dot {
         width: 379px;
         height: 379px;
-        left: 50%;
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-    }
-    .intro-info-1-img img {
-        left: 50%;
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
     }
     .intro-info-2-img-dot {
         left: 20%;
@@ -486,6 +486,10 @@ footer li {
     }
     .lastest-content-img a:nth-child(2) {
         margin: 2rem 0;
+    }
+    .footer-item-dot {
+        width: 30px;
+        height: 30px;
     }
 }
 
