@@ -595,7 +595,7 @@ footer li {
     .sub-content-white {
         font-size: 20px;
         line-height: 1.2;
-        margin: 1rem;
+        margin: 1rem 0;
     }
     .banner-app-store-link {
         margin: 2rem;
