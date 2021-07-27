@@ -228,7 +228,7 @@ header {
     display: flex;
 }
 
-.yam-cat-item-icon img {
+.yam-cat-item-icon a {
     margin: auto;
 }
 
@@ -236,6 +236,18 @@ header {
     color: #fff;
     font-size: 18px;
     text-align: center;
+    margin: 1rem 0;
+}
+
+.yam-img-grid-3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.yam-img-3-item {
+    width: 32%;
     margin: 1rem 0;
 }
 
@@ -798,8 +810,23 @@ footer li {
         width: 110px;
         height: 110px;
     }
+    .post-intro-video {
+        border: 1px solid #fff;
+        border-radius: 15px;
+    }
+    .post-intro-video video {
+        border: 5px solid #000;
+        border-radius: 15px;
+    }
     #post-intro-video-note {
         font-size: 12px;
+    }
+    .yam-img-grid-3 {
+        justify-content: space-around;
+    }
+    .yam-img-3-item {
+        width: 45%;
+        margin: 1rem 0;
     }
 }
 
