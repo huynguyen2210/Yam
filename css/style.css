@@ -813,6 +813,9 @@ footer li {
     .card-item {
         width: 48%;
     }
+    .yam-img-6-item {
+        width: 30%;
+    }
 }
 
 @media screen and (max-width: 576px) {
