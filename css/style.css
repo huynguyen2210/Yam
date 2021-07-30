@@ -46,6 +46,10 @@ ul li {
     list-style-type: none;
 }
 
+button a {
+    font-weight: 700 !important;
+}
+
 .list-decor {
     display: block !important;
     padding-inline-start: 35px !important;
@@ -301,6 +305,10 @@ header {
     border-radius: 5px;
 }
 
+.btn-main-yam a {
+    color: #fff;
+}
+
 .btn-main-yam,
 .btn-main-yam:hover,
 .btn-main-yam:active,
@@ -310,6 +318,23 @@ header {
     background-color: #00AFBB !important;
     border-color: #00AFBB !important;
     outline-color: #00AFBB !important;
+    border-radius: 5px;
+}
+
+.btn-black-yam a {
+    color: #fff;
+}
+
+.btn-black-yam,
+.btn-black-yam:hover,
+.btn-black-yam:active,
+.btn-black-yam:visited,
+.btn-black-yam:focus {
+    width: 320px;
+    background: linear-gradient(0deg, #18191C 0%, #343434 100%) !important;
+    border-color: #343434 !important;
+    outline-color: #343434 !important;
+    box-shadow: none;
     border-radius: 5px;
 }
 
@@ -791,11 +816,6 @@ header {
     z-index: -1;
 }
 
-
-/* .product-page-banner-content {
-    z-index: 999;
-} */
-
 .product-page-searching .main-content-white-18 {
     /* margin: 2rem 0; */
     height: 3rem;
@@ -808,15 +828,108 @@ header {
 
 .product-page-yamcreator span {
     color: #FF624D;
-    ;
 }
 
 .product-page-yamfan span {
     color: #00AFBB;
-    ;
+}
+
+.product-page-getstarted .sub-content-white-18 {
+    margin: 3rem 0;
+}
+
+.product-page-getstarted .sub-content-white-18 a {
+    color: #000 !important;
+    font-weight: 700;
 }
 
 
+/* CONTACT PAGE */
+
+.contact-page-content {
+    margin: 4rem 0;
+}
+
+.contact-info {
+    padding: 3rem 4rem;
+    background: linear-gradient(0deg, #18191C 0%, #343434 100%);
+    border-radius: 30px;
+}
+
+.contact-info>div {
+    width: 100%;
+}
+
+.contact-info div:nth-of-type(2) {
+    margin: 2rem 0;
+}
+
+.contact-info .sub-content-white-18:first {
+    font-weight: 700;
+}
+
+.contact-info-mail a {
+    color: #00AFBB;
+    font-weight: 700;
+}
+
+.contact-info-map {
+    border-radius: 20px;
+}
+
+.contact-form {
+    margin: 0;
+    color: #fff;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #fff;
+    font-size: 18px;
+}
+
+.contact-form label {
+    font-weight: 700;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    background: linear-gradient(0deg, #18191C 0%, #343434 100%);
+    border: 2px solid #00AFBB;
+    border-radius: 8px;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+    border: 2px solid #00AFBB;
+    outline-color: unset !important;
+    box-shadow: none !important;
+}
+
+contact-form select {
+    position: relative;
+    display: block;
+    font-size: 18px;
+    color: #C4C4C4;
+    height: auto !important;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.contact-form select option {
+    background-color: #C4C4C4;
+    width: 100%;
+    min-width: unset;
+    max-width: 100%;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.
 /* FOOTER */
 
 footer {
@@ -836,7 +949,7 @@ footer a,
 footer li {
     color: #fff;
     margin: 1rem 0;
-    font-weight: 300 !important;
+    font-weight: 300;
 }
 
 .footer-item-dot {
@@ -845,6 +958,10 @@ footer li {
     width: 40px;
     height: 40px;
     border-radius: 50%;
+}
+
+.footer-item-dot:nth-of-type(2) {
+    margin: 0 10px;
 }
 
 @media screen and (min-width: 1440px) {
@@ -1044,6 +1161,13 @@ footer li {
     }
     .get-started-icon-content {
         margin-top: 3rem;
+    }
+    .btn-black-yam,
+    .btn-black-yam:hover,
+    .btn-black-yam:active,
+    .btn-black-yam:visited,
+    .btn-black-yam:focus {
+        width: 280px;
     }
     .btn-creator,
     .btn-creator:hover,
