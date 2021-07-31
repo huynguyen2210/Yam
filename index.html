@@ -201,37 +201,100 @@
         <section class="lastest-content list-post-section black-bg pd-6">
             <div class="container">
                 <h1>Lastest Content</h1>
-                <div class="list-post-section-img d-flex flex-lg-row flex-column justify-content-between align-items-center">
-                    <div class="bw-img-item">
-                        <a href=""><img class="img-fluid bw-img" src="./images/lastest-content-1.png" alt=""></a>
-                        <a class="bw-img-overlay" href="">
-                            <div class="bw-img-overlay-text">
-                                <div class="hover-text-bold">Không tầm thường</div>
-                                <div class="hover-text-normal">A Dưa Leo's Podcard</div>
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="list-post-section-img d-flex flex-lg-row flex-column justify-content-between align-items-center">
+                                <div class="bw-img-item">
+
+                                    <a href=""><img class="img-fluid bw-img" src="./images/lastest-content-1.png" alt=""></a>
+                                    <a class="bw-img-overlay video-btn" data-toggle="modal" data-src="" data-target="#myModal">
+                                        <div class="bw-img-overlay-text">
+                                            <div class="hover-text-bold">Không tầm thường</div>
+                                            <div class="hover-text-normal">A Dưa Leo's Podcard</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="bw-img-item list-child-item-2">
+
+                                    <a href=""><img class="img-fluid bw-img" src="./images/lastest-content-2.png" alt=""></a>
+                                    <a class="bw-img-overlay video-btn" data-toggle="modal" data-src="" data-target="#myModal">
+                                        <div class="bw-img-overlay-text">
+                                            <div class="hover-text-bold">Không tầm thường</div>
+                                            <div class="hover-text-normal">A Dưa Leo's Podcard</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="bw-img-item">
+
+                                    <a href=""><img class="img-fluid bw-img" src="./images/lastest-content-3.png" alt=""></a>
+                                    <a class="bw-img-overlay video-btn" data-toggle="modal" data-src="" data-target="#myModal">
+                                        <div class="bw-img-overlay-text">
+                                            <div class="hover-text-bold">Không tầm thường</div>
+                                            <div class="hover-text-normal">A Dưa Leo's Podcard</div>
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
-                        </a>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="list-post-section-img d-flex flex-lg-row flex-column justify-content-between align-items-center">
+                                <div class="bw-img-item">
+
+                                    <a href=""><img class="img-fluid bw-img" src="./images/lastest-content-2.png" alt=""></a>
+                                    <a class="bw-img-overlay video-btn" data-toggle="modal" data-src="" data-target="#myModal">
+                                        <div class="bw-img-overlay-text">
+                                            <div class="hover-text-bold">Không tầm thường</div>
+                                            <div class="hover-text-normal">A Dưa Leo's Podcard</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="bw-img-item list-child-item-2">
+
+                                    <a href=""><img class="img-fluid bw-img" src="./images/lastest-content-3.png" alt=""></a>
+                                    <a class="bw-img-overlay video-btn" data-toggle="modal" data-src="" data-target="#myModal">
+                                        <div class="bw-img-overlay-text">
+                                            <div class="hover-text-bold">Không tầm thường</div>
+                                            <div class="hover-text-normal">A Dưa Leo's Podcard</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="bw-img-item">
+
+                                    <a href=""><img class="img-fluid bw-img" src="./images/lastest-content-1.png" alt=""></a>
+                                    <a class="bw-img-overlay video-btn" data-toggle="modal" data-src="" data-target="#myModal">
+                                        <div class="bw-img-overlay-text">
+                                            <div class="hover-text-bold">Không tầm thường</div>
+                                            <div class="hover-text-normal">A Dưa Leo's Podcard</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="bw-img-item list-child-item-2">
-                        <a href=""><img class="img-fluid bw-img" src="./images/lastest-content-2.png" alt=""></a>
-                        <a class="bw-img-overlay" href="">
-                            <div class="bw-img-overlay-text">
-                                <div class="hover-text-bold">Không tầm thường</div>
-                                <div class="hover-text-normal">A Dưa Leo's Podcard</div>
+                </div>
+
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <!-- 16:9 aspect ratio -->
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <video class="embed-responsive-item video" controls id="video">
+                                        <source src="./video/10x home.mp4" type="video/mp4">
+                                        Your browser doesn't support HTML5 video tag.
+                                      </video>
+                                </div>
                             </div>
-                        </a>
-                    </div>
-                    <div class="bw-img-item">
-                        <a href=""><img class="img-fluid bw-img" src="./images/lastest-content-3.png" alt=""></a>
-                        <a class="bw-img-overlay" href="">
-                            <div class="bw-img-overlay-text">
-                                <div class="hover-text-bold">Không tầm thường</div>
-                                <div class="hover-text-normal">A Dưa Leo's Podcard</div>
-                            </div>
-                        </a>
+                        </div>
                     </div>
                 </div>
                 <div class="text-right"><a class="more-link" href="">View more</a></div>
             </div>
+
         </section>
     </main>
 
@@ -296,7 +359,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q " crossorigin="anonymous "></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl " crossorigin="anonymous "></script>
-    <script src="main.js "></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>

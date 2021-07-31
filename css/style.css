@@ -315,6 +315,8 @@ header {
 .btn-main-yam:visited,
 .btn-main-yam:focus {
     width: 150px;
+    color: #fff;
+    font-weight: 700;
     background-color: #00AFBB !important;
     border-color: #00AFBB !important;
     outline-color: #00AFBB !important;
@@ -619,6 +621,27 @@ header {
     margin: 0 2rem;
 }
 
+.modal-dialog {
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+.modal-body {
+    position: relative;
+    padding: 0px;
+}
+
+.close {
+    position: absolute;
+    right: -30px;
+    top: 0;
+    z-index: 999;
+    font-size: 2rem;
+    font-weight: normal;
+    color: #fff;
+    opacity: 1;
+}
+
 
 /* END HOME PAGE */
 
@@ -882,14 +905,29 @@ header {
     color: #fff;
 }
 
+.contact-form .form-group {
+    margin-bottom: 3rem;
+}
+
 .contact-form input::placeholder,
-.contact-form textarea::placeholder {
+.contact-form textarea::placeholder,
+.contact-form textarea,
+.contact-form input,
+.contact-form input:focus,
+.contact-form textarea:focus {
     color: #fff;
     font-size: 18px;
 }
 
 .contact-form label {
     font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.contact-form label::after {
+    content: '(*)';
+    color: #00AFBB;
+    margin-left: 5px;
 }
 
 .contact-form input,
@@ -908,7 +946,7 @@ header {
     box-shadow: none !important;
 }
 
-contact-form select {
+.contact-form select {
     position: relative;
     display: block;
     font-size: 18px;
@@ -922,14 +960,16 @@ contact-form select {
 .contact-form select option {
     background-color: #C4C4C4;
     width: 100%;
+    margin: 1rem 0;
+    padding: 1rem 0;
     min-width: unset;
-    max-width: 100%;
+    min-width: 100% !important;
     color: #000;
-    border: 1px solid #000;
-    border-radius: 5px;
+    border: 1px solid #000 !important;
+    border-radius: 5px !important;
 }
 
-.
+
 /* FOOTER */
 
 footer {
