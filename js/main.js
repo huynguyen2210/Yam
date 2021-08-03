@@ -27,8 +27,6 @@ $(document).ready(function() {
     $('.video-btn').click(function() {
         $videoSrc = $(this).data("src");
         $idValue = $(this).attr("data-target");
-        console.log($videoSrc);
-        console.log($idValue);
     });
 
 
