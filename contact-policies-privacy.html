@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yam</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -25,7 +27,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">About</a>
                         </li>
-                        <li class="nav-item dropdown">
+                        <li class="nav-item dropdown1">
                             <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Creators</a>
                             <div class="dropdown-menu drop-menu-1 text-center" aria-labelledby="navbarDropdown">
@@ -39,7 +41,7 @@
                                 </a>
                             </div>
                         </li>
-                        <li class="nav-item dropdown">
+                        <li class="nav-item dropdown2">
                             <a class="nav-link" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Solutions</a>
                             <div class="dropdown-menu drop-menu-2 text-center" aria-labelledby="navbarDropdown">
@@ -135,7 +137,7 @@
                             </div>
 
                             <div id="collapse-menu-list" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion-menu">
-                                <div class="card-body">
+                                <div class="card-body" id="list-example">
                                     <div><a class="colapse-menu-list-ques" id="toContent00" href="#content-00">00 Chào mừng bạn đến với Yam!</a></div>
                                     <div><a class="colapse-menu-list-ques" id="toContent01" href="#content-01">01 Dữ liệu chúng tôi thu thập từ người dùng</a></div>
                                     <div><a class="colapse-menu-list-ques" id="toContent02" href="#content-02">02 Cách thức thu thập dữ liệu người dùng</a></div>
@@ -160,7 +162,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="privacy-page-content detail-info-content col-lg-8" id="tc-toppage">
+                    <div class="privacy-page-content detail-info-content col-lg-8" id="tc-toppage" data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example">
                         <h1 class="main-content white-color">Chính sách quyền riêng tư</h1>
                         <div class="sub-content white-color">Ngày cập nhật gần nhất: 17 tháng 06 năm 2021.</div>
                         <h1 class="main-content-48 white-color" id="content-00">00 Chào mừng bạn đến với Yam!</h1>
@@ -267,7 +269,7 @@
 
                             <br><br>Người dùng đồng ý rằng chúng tôi không chịu bất kỳ trách nhiệm và nghĩa vụ nào khi người dùng cung cấp thông tin không chính xác, không đúng sự thật về Dữ liệu cá nhân.</p>
                         <h1 class="main-content-48" id="content-10">10 Nghĩa vụ của người dùng khi áp dụng chính sách</h1>
-                        <p class="sub-content-white-18">Khi phát hiện hành vi vi phạm của người dùng, chúng tôi sẽ cố gắng khắc phục tối đa hậu quả từ hành vi vi phạm của người dùng để không làm ảnh hưởng đến những người dùng khác.
+                        <p class="sub-content-18 white-color">Khi phát hiện hành vi vi phạm của người dùng, chúng tôi sẽ cố gắng khắc phục tối đa hậu quả từ hành vi vi phạm của người dùng để không làm ảnh hưởng đến những người dùng khác.
 
                             <br><br>Người dùng đồng ý rằng chúng tôi không có bất kỳ trách nhiệm, nghĩa vụ nào liên quan khi người dùng vi phạm Chính sách quyền riêng tư này. Ngoài ra, người dùng phải chịu toàn bộ trách nhiệm và bồi thường thiệt hại do
                             hành vi vi phạm của mình.</p>
@@ -341,6 +343,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q " crossorigin="anonymous "></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl " crossorigin="anonymous "></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./js/main.js "></script>
 </body>
 

@@ -15,6 +15,50 @@ $(document).ready(function() {
         scrollPos = (document.body.getBoundingClientRect()).top;
     });
 
+    //Show menu dropdown when hover Menu 
+    $(".dropdown1").hover(function() {
+        $(".dropdown-menu").removeClass("show");
+        $(".drop-menu-1").addClass("show");
+        var dropMenu = document.querySelector('.show');
+        dropMenu.addEventListener("mouseleave", function(event) {
+            $(".dropdown-menu").removeClass("show");
+        });
+    });
+    $(".dropdown2").hover(function() {
+        $(".dropdown-menu").removeClass("show");
+        $(".drop-menu-2").addClass("show");
+        var dropMenu = document.querySelector('.show');
+        dropMenu.addEventListener("mouseleave", function(event) {
+            $(".dropdown-menu").removeClass("show");
+        });
+    });
+
+    $('.main-slider').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: false,
+        autoplay: true,
+        pauseOnFocus: true,
+        pauseOnHover: true,
+        responsive: [{
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+
+        ]
+    });
+
     // Gets the video src from the data-src on each button
     var $videoSrc;
     var $idValue;
