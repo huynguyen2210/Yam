@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -140,21 +141,22 @@
                             </div>
                             <div class="form-group styled-select">
                                 <label for="option-select">Are you a...?</label>
-                                <select class="form-control" id="option-select" required>
+                                <select class="select2-box form-control" id="option-select" required>
                                     <option class="disable-opt" value="" selected disabled hidden>Select subject</option>
                                     <option>Creator</option>
                                     <option>Fan</option>
-                              </select>
+                                  </select>
                             </div>
+
                             <div class="form-group  styled-select">
                                 <label for="type-question-select">What is your question in reference to?</label>
-                                <select class="form-control" id="type-question-select" required>
+                                <select class="select2-box form-control" id="type-question-select" required>
                                     <option class="disable-opt" value="" selected disabled hidden>Select one of the following</option>
                                     <option>App error</option>
                                     <option>Token error</option>
                                     <option>Recommendations for Yam</option>
                                     <option>Others</option>
-                                </select>
+                                  </select>
                             </div>
                             <div class="form-group">
                                 <label for="message-input">Message</label>
@@ -246,6 +248,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q " crossorigin="anonymous "></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl " crossorigin="anonymous "></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script src="./js/main.js "></script>
 </body>
 

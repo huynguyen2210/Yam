@@ -82,7 +82,15 @@ $(document).ready(function() {
         $("#video").attr('src', $videoSrc);
     })
 
-
+    $('.select2-box').select2({
+        minimumResultsForSearch: -1,
+        templateResult: function(option) {
+            if (option.element && (option.element).hasAttribute('hidden')) {
+                return null;
+            }
+            return option.text;
+        }
+    });
 
 
     $('.colapse-menu-list-ques').click(function() {
@@ -94,13 +102,34 @@ $(document).ready(function() {
         d.className += " bold-weight";
     });
 
-    $("#toHeadingOne").click(function() {
+    $("#toheadingOne").click(function() {
         $("#collapse_1").trigger("click");
     });
-    $("#toHeadingTwo").click(function() {
+    $("#toheadingTwo").click(function() {
         $("#collapse_2").trigger("click");
     });
-    $("#toHeadingThree").click(function() {
+    $("#toheadingThree").click(function() {
         $("#collapse_3").trigger("click");
+    });
+    var collapseShowing = document.querySelector(".about-yam-accordion .show");
+    var idCollapseShowing = 'to' + collapseShowing.getAttribute("aria-labelledby");
+    document.getElementById(idCollapseShowing).classList.add("bold-weight");
+    $("button").click(function() {
+        setTimeout(function() {
+            var collapseShowing = document.querySelectorAll(".about-yam-accordion .collapse");
+            var collapseShowingArray = [...collapseShowing];
+            collapseShowingArray.forEach(function(e) {
+                console.log(e);
+                var idCollapseShowing = 'to' + e.getAttribute("aria-labelledby");
+                if (e.classList.contains("show")) {
+                    var idCollapseShowing = 'to' + e.getAttribute("aria-labelledby");
+                    document.getElementById(idCollapseShowing).classList.add("bold-weight");
+                } else {
+                    var idCollapseShowing = 'to' + e.getAttribute("aria-labelledby");
+                    console.log(idCollapseShowing)
+                    document.getElementById(idCollapseShowing).classList.remove("bold-weight");
+                }
+            });
+        }, 400);
     });
 });
