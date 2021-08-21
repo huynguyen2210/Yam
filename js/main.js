@@ -1,19 +1,33 @@
 $(document).ready(function() {
     //Show header when scroll down
-    var scrollPos = 0;
-    // adding scroll event
-    window.addEventListener('scroll', function() {
-        // detects new state and compares it with the new one
-        if ((document.body.getBoundingClientRect()).top > scrollPos) {
-            $('header').removeClass("navbar-showon")
-            $('header').addClass("autohide");
-        } else {
+    // var scrollPos = 0;
+    // // adding scroll event
+    // window.addEventListener('scroll', function() {
+    //     // detects new state and compares it with the new one
+    //     if ((document.body.getBoundingClientRect()).top > scrollPos) {
+    //         $('header').removeClass("navbar-showon")
+    //         $('header').addClass("autohide");
+    //     } else {
+    //         $('header').removeClass("autohide")
+    //         $('header').addClass("navbar-showon");
+    //     }
+    //     scrollPos = (document.body.getBoundingClientRect()).top;
+    // });
+
+    $(window).on('scroll', function() {
+        console.log($(window).scrollTop());
+        var scroll = $(window).scrollTop();
+        if (scroll > 100) {
             $('header').removeClass("autohide")
             $('header').addClass("navbar-showon");
+            document.querySelector('.fixed-sidebar').classList.add("side-menu-collapseHeader");
+        } else {
+            $('header').removeClass("navbar-showon")
+            $('header').addClass("autohide");
+            document.querySelector('.fixed-sidebar').classList.remove("side-menu-collapseHeader");
         }
-        // saves the new position for iteration.
-        scrollPos = (document.body.getBoundingClientRect()).top;
     });
+
 
     //Show menu dropdown when hover Menu 
     $(".dropdown1").hover(function() {
@@ -32,7 +46,16 @@ $(document).ready(function() {
             $(".dropdown-menu").removeClass("show");
         });
     });
-
+    $('.item-lang').click(function() {
+        var langActive = document.querySelector(".lang-active");
+        var langDeActive = document.querySelector(".lang-deactive");
+        console.log(langDeActive);
+        langActive.classList.remove("lang-active");
+        langActive.classList.add("lang-deactive");
+        console.log(langActive);
+        langDeActive.classList.remove("lang-deactive");
+        langDeActive.classList.add("lang-active");
+    });
     $('.main-slider').slick({
         infinite: true,
         slidesToShow: 3,
@@ -91,17 +114,29 @@ $(document).ready(function() {
             return option.text;
         }
     });
-
-
-    $('.colapse-menu-list-ques').click(function() {
-        $idValue = $(this).attr("id");
-        var d = document.getElementById($idValue);
-        var $classNameValue = '.' + d.className;
-        console.log($classNameValue);
-        $($classNameValue).removeClass('bold-weight');
-        d.className += " bold-weight";
+    $('.colapse-menu-list-ques').on('click', function(event) {
+        event.preventDefault();
+        var o = $($(this).attr("href")).offset();
+        var sT = o.top - $('header').outerHeight(true);
+        console.log(sT);
+        window.scrollTo(0, sT);
     });
 
+    // $('.colapse-menu-list-ques').click(function() {
+    //     $idValue = $(this).attr("id");
+    //     var d = document.getElementById($idValue);
+    //     var $classNameValue = '.' + d.className;
+    //     console.log($classNameValue);
+    //     $($classNameValue).removeClass('bold-weight');
+    //     d.className += " bold-weight";
+    // });
+    $('.contact-about-yam-page-menu').on('click', 'a', function(event) {
+        event.preventDefault();
+        var o = $($(this).attr("href")).offset();
+        var sT = o.top - $('header').outerHeight(true);
+        console.log(sT);
+        window.scrollTo(0, sT);
+    });
     $("#toheadingOne").click(function() {
         $("#collapse_1").trigger("click");
     });
@@ -111,25 +146,25 @@ $(document).ready(function() {
     $("#toheadingThree").click(function() {
         $("#collapse_3").trigger("click");
     });
-    var collapseShowing = document.querySelector(".about-yam-accordion .show");
-    var idCollapseShowing = 'to' + collapseShowing.getAttribute("aria-labelledby");
-    document.getElementById(idCollapseShowing).classList.add("bold-weight");
-    $("button").click(function() {
-        setTimeout(function() {
-            var collapseShowing = document.querySelectorAll(".about-yam-accordion .collapse");
-            var collapseShowingArray = [...collapseShowing];
-            collapseShowingArray.forEach(function(e) {
-                console.log(e);
-                var idCollapseShowing = 'to' + e.getAttribute("aria-labelledby");
-                if (e.classList.contains("show")) {
-                    var idCollapseShowing = 'to' + e.getAttribute("aria-labelledby");
-                    document.getElementById(idCollapseShowing).classList.add("bold-weight");
-                } else {
-                    var idCollapseShowing = 'to' + e.getAttribute("aria-labelledby");
-                    console.log(idCollapseShowing)
-                    document.getElementById(idCollapseShowing).classList.remove("bold-weight");
-                }
-            });
-        }, 400);
-    });
+    // var collapseShowing = document.querySelector(".about-yam-accordion .show");
+    // var idCollapseShowing = 'to' + collapseShowing.getAttribute("aria-labelledby");
+    // document.getElementById(idCollapseShowing).classList.add("bold-weight");
+    // $("button").click(function() {
+    //     setTimeout(function() {
+    //         var collapseShowing = document.querySelectorAll(".about-yam-accordion .collapse");
+    //         var collapseShowingArray = [...collapseShowing];
+    //         collapseShowingArray.forEach(function(e) {
+    //             console.log(e);
+    //             var idCollapseShowing = 'to' + e.getAttribute("aria-labelledby");
+    //             if (e.classList.contains("show")) {
+    //                 var idCollapseShowing = 'to' + e.getAttribute("aria-labelledby");
+    //                 document.getElementById(idCollapseShowing).classList.add("bold-weight");
+    //             } else {
+    //                 var idCollapseShowing = 'to' + e.getAttribute("aria-labelledby");
+    //                 console.log(idCollapseShowing)
+    //                 document.getElementById(idCollapseShowing).classList.remove("bold-weight");
+    //             }
+    //         });
+    //     }, 400);
+    // });
 });

@@ -9,10 +9,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".myScrollspy" data-offset="130">
     <header class="black-bg autohide">
         <div class="container">
             <nav class="navbar navbar-expand-xl navbar-dark">
@@ -23,9 +24,9 @@
                 </a>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mx-auto">
+                    <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link nav-link-active" href="#">About</a>
                         </li>
                         <li class="nav-item dropdown1">
                             <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -111,10 +112,9 @@
                             <a class="nav-link py-0" href="#">Top Up</a>
                         </button>
                         </li>
-                        <li class="nav-item item-dot my-auto">
-                            <span class="nav-item-dot"></span>
-                            <span class="nav-item-dot"></span>
-                            <span class="nav-item-dot"></span>
+                        <li class="nav-item item-lang my-auto">
+                            <span><img class="lang-active" src="./images/icon/en.png" alt="">
+                            <img class="lang-deactive" src="./images/icon/vi.png" alt=""></span>
                         </li>
                     </ul>
                 </div>
@@ -126,7 +126,7 @@
         <section class="privacy-page black-bg pd-6">
             <div class="container">
                 <div class="d-lg-flex">
-                    <div class="accordion col-lg-4 question-menu" id="accordion-menu">
+                    <div class="accordion col-lg-4 question-menu fixed-sidebar" id="accordion-menu">
                         <div class="card my-card">
                             <div class="card-header" id="headingOne">
                                 <h2 class="mb-0">
@@ -137,15 +137,15 @@
                             </div>
 
                             <div id="collapse-menu-list" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion-menu">
-                                <div class="card-body" id="list-example">
-                                    <div><a class="colapse-menu-list-ques" id="toContent00" href="#content-00">00 Chào mừng bạn đến với Yam!</a></div>
-                                    <div><a class="colapse-menu-list-ques" id="toContent01" href="#content-01">01 Dữ liệu chúng tôi thu thập từ người dùng</a></div>
-                                    <div><a class="colapse-menu-list-ques" id="toContent02" href="#content-02">02 Cách thức thu thập dữ liệu người dùng</a></div>
-                                    <div><a class="colapse-menu-list-ques" id="toContent03" href="#content-03">03 Cách thức chúng tôi sử dụng dữ liệu cá nhân của bạn</a></div>
-                                    <div><a class="colapse-menu-list-ques" id="toContent04" href="#content-04">04 Chia sẻ dữ liệu cá nhân của bạn</a></div>
-                                    <div><a class="colapse-menu-list-ques" id="toContent05" href="#content-05">05 Chủ động điều chỉnh dữ liệu cá nhân của bạn</a></div>
-                                    <div><a class="colapse-menu-list-ques" id="toContent06" href="#content-06">06 Lưu trữ dữ liệu cá nhân của bạn</a></div>
-                                    <div><a class="colapse-menu-list-ques" id="toContent07" href="#content-07">07 Thay đổi chính sách quyền riêng tư</a></div>
+                                <nav class="card-body myScrollspy">
+                                    <div><a class="colapse-menu-list-ques list-group-item" id="toContent00" href="#content-00">00 Chào mừng bạn đến với Yam!</a></div>
+                                    <div><a class="colapse-menu-list-ques list-group-item" id="toContent01" href="#content-01">01 Dữ liệu chúng tôi thu thập từ người dùng</a></div>
+                                    <div><a class="colapse-menu-list-ques list-group-item" id="toContent02" href="#content-02">02 Cách thức thu thập dữ liệu người dùng</a></div>
+                                    <div><a class="colapse-menu-list-ques list-group-item" id="toContent03" href="#content-03">03 Cách thức chúng tôi sử dụng dữ liệu cá nhân của bạn</a></div>
+                                    <div><a class="colapse-menu-list-ques list-group-item" id="toContent04" href="#content-04">04 Chia sẻ dữ liệu cá nhân của bạn</a></div>
+                                    <div><a class="colapse-menu-list-ques list-group-item" id="toContent05" href="#content-05">05 Chủ động điều chỉnh dữ liệu cá nhân của bạn</a></div>
+                                    <div><a class="colapse-menu-list-ques list-group-item" id="toContent06" href="#content-06">06 Lưu trữ dữ liệu cá nhân của bạn</a></div>
+                                    <div><a class="colapse-menu-list-ques list-group-item" id="toContent07" href="#content-07">07 Thay đổi chính sách quyền riêng tư</a></div>
                                     <div>
                                         <a class="colapse-menu-list-ques" id="toContent08" href="#content-08">08 Về bên thứ ba</a>
                                     </div>
@@ -158,11 +158,11 @@
                                     <div>
                                         <a class="colapse-menu-list-ques" id="toContent11" href="#content-11">11 Thông tin liên lạc</a>
                                     </div>
-                                </div>
+                                </nav>
                             </div>
                         </div>
                     </div>
-                    <div class="privacy-page-content detail-info-content col-lg-8" id="tc-toppage" data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example">
+                    <div class="privacy-page-content detail-info-content col-lg-8 ml-lg-auto" id="tc-toppage">
                         <h1 class="main-content white-color">Chính sách quyền riêng tư</h1>
                         <div class="sub-content white-color">Ngày cập nhật gần nhất: 17 tháng 06 năm 2021.</div>
                         <h1 class="main-content-48 white-color" id="content-00">00 Chào mừng bạn đến với Yam!</h1>
@@ -328,10 +328,10 @@
                             <li><a href=" ">FAQ</a></li>
                             <li><a href=" ">T&C</a></li>
                             <li><a href=" ">Policies & Guidelines</a></li>
-                            <li class="footer-item my-auto ">
-                                <span class="footer-item-dot "></span>
-                                <span class="footer-item-dot "></span>
-                                <span class="footer-item-dot "></span>
+                            <li class="footer-item my-auto d-flex align-items-center">
+                                <a class="footer-item-dot" href=""><img src="./images/icon/facebook.png" alt=""></a>
+                                <a class="footer-item-dot" href=""><img src="./images/icon/youtube.png" alt=""></a>
+                                <a class="footer-item-dot" href=""><img src="./images/icon/tiktok.png" alt=""></a>
                             </li>
                         </ul>
                     </div>
@@ -344,6 +344,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q " crossorigin="anonymous "></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl " crossorigin="anonymous "></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script src="./js/main.js "></script>
 </body>
 

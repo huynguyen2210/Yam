@@ -9,10 +9,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".myScrollspy" data-offset="130">
     <header class="black-bg autohide">
         <div class="container">
             <nav class="navbar navbar-expand-xl navbar-dark">
@@ -23,9 +24,9 @@
                 </a>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mx-auto">
+                    <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link nav-link-active" href="#">About</a>
                         </li>
                         <li class="nav-item dropdown1">
                             <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -111,10 +112,9 @@
                             <a class="nav-link py-0" href="#">Top Up</a>
                         </button>
                         </li>
-                        <li class="nav-item item-dot my-auto">
-                            <span class="nav-item-dot"></span>
-                            <span class="nav-item-dot"></span>
-                            <span class="nav-item-dot"></span>
+                        <li class="nav-item item-lang my-auto">
+                            <span><img class="lang-active" src="./images/icon/en.png" alt="">
+                            <img class="lang-deactive" src="./images/icon/vi.png" alt=""></span>
                         </li>
                     </ul>
                 </div>
@@ -127,13 +127,13 @@
             <div class="container">
                 <div class="slug-page"><a href="">Yam Support</a> > Giới thiệu chung về Yam</div>
                 <div class="d-lg-flex mt-5">
-                    <div class="col-lg-4 pl-0 contact-about-yam-page-menu">
+                    <div class="col-lg-4 pl-0 contact-about-yam-page-menu fixed-sidebar myScrollspy">
                         <div class="main-content-18 white-color">Giới thiệu chung về Yam</div>
-                        <div class="sub-content-18 white-color"><a id="toheadingOne" href="#headingOne">01 Yam là gì?</a></div>
-                        <div class="sub-content-18 white-color"><a id="toheadingTwo" href="#headingTwo">02 Yam có gì khác biệt so với YouTube, Facebook?</a></div>
-                        <div class="sub-content-18 white-color"><a id="toheadingThree" href="#headingThree">03 Làm thế nào để tạo tài khoản người dùng trên Yam?</a></div>
+                        <div class="sub-content-18 white-color"><a class="list-group-item" id="toheadingOne" href="#headingOne">01 Yam là gì?</a></div>
+                        <div class="sub-content-18 white-color"><a class="list-group-item" id="toheadingTwo" href="#headingTwo">02 Yam có gì khác biệt so với YouTube, Facebook?</a></div>
+                        <div class="sub-content-18 white-color"><a class="list-group-item" id="toheadingThree" href="#headingThree">03 Làm thế nào để tạo tài khoản người dùng trên Yam?</a></div>
                     </div>
-                    <div class="contact-about-yam-page-content detail-info-content col-lg-8 pl-0">
+                    <div class="contact-about-yam-page-content detail-info-content col-lg-8 pl-0 ml-lg-auto">
                         <h1 class="main-content white-color">Giới thiệu chung về Yam</h1>
                         <div class="sub-content white-color">Bạn hỏi xoáy, Yam đáp xoay!</div>
                         <div class="accordion about-yam-accordion" id="accordion-about-yam">
@@ -169,7 +169,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card my-card">
+                            <div class="card my-card" id="card_03">
                                 <div class="card-header" id="headingThree">
                                     <h2 class="mb-0">
                                         <button id="collapse_3" class="btn btn-link main-content-48 white-color collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="" aria-controls="collapseThree">
@@ -246,10 +246,10 @@
                             <li><a href=" ">FAQ</a></li>
                             <li><a href=" ">T&C</a></li>
                             <li><a href=" ">Policies & Guidelines</a></li>
-                            <li class="footer-item my-auto ">
-                                <span class="footer-item-dot "></span>
-                                <span class="footer-item-dot "></span>
-                                <span class="footer-item-dot "></span>
+                            <li class="footer-item my-auto d-flex align-items-center">
+                                <a class="footer-item-dot" href=""><img src="./images/icon/facebook.png" alt=""></a>
+                                <a class="footer-item-dot" href=""><img src="./images/icon/youtube.png" alt=""></a>
+                                <a class="footer-item-dot" href=""><img src="./images/icon/tiktok.png" alt=""></a>
                             </li>
                         </ul>
                     </div>
@@ -263,6 +263,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q " crossorigin="anonymous "></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl " crossorigin="anonymous "></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
 

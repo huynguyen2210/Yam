@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -21,12 +22,13 @@
                     <span class="close-icon"><img src="./images/close(1).png" alt=""></span>
                     <span class="toggler-icon"><img src="./images/menu.png" alt=""></span>
                 </a>
+
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mx-auto">
+                    <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link nav-link-active" href="#">About</a>
                         </li>
-                        <li class="nav-item dropdown">
+                        <li class="nav-item dropdown1">
                             <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Creators</a>
                             <div class="dropdown-menu drop-menu-1 text-center" aria-labelledby="navbarDropdown">
@@ -40,7 +42,7 @@
                                 </a>
                             </div>
                         </li>
-                        <li class="nav-item dropdown">
+                        <li class="nav-item dropdown2">
                             <a class="nav-link" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Solutions</a>
                             <div class="dropdown-menu drop-menu-2 text-center" aria-labelledby="navbarDropdown">
@@ -110,10 +112,9 @@
                             <a class="nav-link py-0" href="#">Top Up</a>
                         </button>
                         </li>
-                        <li class="nav-item item-dot my-auto">
-                            <span class="nav-item-dot"></span>
-                            <span class="nav-item-dot"></span>
-                            <span class="nav-item-dot"></span>
+                        <li class="nav-item item-lang my-auto">
+                            <span><img class="lang-active" src="./images/icon/en.png" alt="">
+                            <img class="lang-deactive" src="./images/icon/vi.png" alt=""></span>
                         </li>
                     </ul>
                 </div>
@@ -459,10 +460,10 @@
                             <li><a href=" ">FAQ</a></li>
                             <li><a href=" ">T&C</a></li>
                             <li><a href=" ">Policies & Guidelines</a></li>
-                            <li class="footer-item my-auto ">
-                                <span class="footer-item-dot "></span>
-                                <span class="footer-item-dot "></span>
-                                <span class="footer-item-dot "></span>
+                            <li class="footer-item my-auto d-flex align-items-center">
+                                <a class="footer-item-dot" href=""><img src="./images/icon/facebook.png" alt=""></a>
+                                <a class="footer-item-dot" href=""><img src="./images/icon/youtube.png" alt=""></a>
+                                <a class="footer-item-dot" href=""><img src="./images/icon/tiktok.png" alt=""></a>
                             </li>
                         </ul>
                     </div>
@@ -475,6 +476,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q " crossorigin="anonymous "></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl " crossorigin="anonymous "></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
 

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -23,9 +24,9 @@
                 </a>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mx-auto">
+                    <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link nav-link-active" href="#">About</a>
                         </li>
                         <li class="nav-item dropdown1">
                             <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -111,10 +112,9 @@
                             <a class="nav-link py-0" href="#">Top Up</a>
                         </button>
                         </li>
-                        <li class="nav-item item-dot my-auto">
-                            <span class="nav-item-dot"></span>
-                            <span class="nav-item-dot"></span>
-                            <span class="nav-item-dot"></span>
+                        <li class="nav-item item-lang my-auto">
+                            <span><img class="lang-active" src="./images/icon/en.png" alt="">
+                            <img class="lang-deactive" src="./images/icon/vi.png" alt=""></span>
                         </li>
                     </ul>
                 </div>
@@ -125,8 +125,8 @@
     <main>
         <section class="banner">
             <div class="container d-flex flex-column justify-content-center align-items-center h-100">
-                <h1 class="banner-main-content main-content-black text-center">Hiện thực hóa đam mê</h1>
-                <div class="banner-sub-content sub-content-black text-center">For a stronger creator-fan connection</div>
+                <h1 class="banner-main-content main-content black-color text-center">Hiện thực hóa đam mê</h1>
+                <div class="banner-sub-content sub-content black-color text-center">For a stronger creator-fan connection</div>
                 <div class="banner-app-store-link d-flex flex-sm-row justify-content-sm-center flex-column align-items-center">
                     <a class="mx-4" href=""><img src="./images/app-store.png" alt=""></a>
                     <a class="mx-4" href=""><img src="./images/google-play.png" alt=""></a>
@@ -147,7 +147,7 @@
                 </div>
             </div>
         </section>
-        <section class="intro-video yam-bg pd-6">
+        <section class="intro-video section-active-menu yam-bg pd-6">
             <div class="container">
                 <div class="intro-video-player">
                     <div class="embed-responsive embed-responsive-16by9">
@@ -174,8 +174,8 @@
             <div class="container">
                 <div class="intro-info-1 d-lg-flex align-items-center">
                     <div class="intro-info-1-text col-lg-6 d-flex flex-column">
-                        <h1 class="main-content white-color">The #1 secret to <span class="yam-color">sustainable success</span> as a Creator</h1>
-                        <p>When your content is good in quality and engaging enough, you are already halfway to success. Let Yam help you trigger interactions and earn sustainable success from your contents with our solutions for Creators.</p>
+                        <h1 class="main-content-64 white-color">The #1 secret to <span class="yam-color">sustainable success</span> as a Creator</h1>
+                        <p class="sub-content white-color mb-0">When your content is good in quality and engaging enough, you are already halfway to success. Let Yam help you trigger interactions and earn sustainable success from your contents with our solutions for Creators.</p>
                         <a class="intro-info-more-link ml-auto more-link ml-auto" href="">Learn more</a>
                     </div>
                     <div class="intro-info-1-img col-lg-6">
@@ -183,13 +183,13 @@
                         <img class="img-fluid" src="./images/mobile-app-demo-1.png" alt="">
                     </div>
                 </div>
-                <div class="intro-info-2 d-lg-flex justify-content-center align-items-center">
+                <div class="intro-info-2 d-lg-flex justify-content-center align-items-center mt-8">
                     <div class="intro-info-2-text col-lg-6 order-lg-2 d-flex flex-column">
-                        <h1 class="main-content white-color">Unlimited access to <span class="yam-color">members-only content​</span></h1>
-                        <p>When your content is good in quality and engaging enough, you are already halfway to success. Let Yam help you trigger interactions and earn sustainable success from your contents with our solutions for Creators.</p>
+                        <h1 class="main-content-64 white-color">Unlimited access to <span class="yam-color">members-only content​</span></h1>
+                        <p class="sub-content white-color mb-0">When your content is good in quality and engaging enough, you are already halfway to success. Let Yam help you trigger interactions and earn sustainable success from your contents with our solutions for Creators.</p>
                         <a class="intro-info-more-link more-link ml-auto" href="">Learn more</a>
                     </div>
-                    <div class="intro-info-2-img col-lg-6 order-lg-1">
+                    <div class="intro-info-2-img col-lg-6 order-lg-1 mt-lg-0 mt-5">
                         <span class="intro-info-2-img-dot"></span>
                         <img class="img-fluid intro-info-2-img-1" src="./images/mobile-app-demo-2.png" alt="">
                         <img class="img-fluid intro-info-2-img-2" src="./images/mobile-app-demo-3.png" alt="">
@@ -345,10 +345,10 @@
                             <li><a href=" ">FAQ</a></li>
                             <li><a href=" ">T&C</a></li>
                             <li><a href=" ">Policies & Guidelines</a></li>
-                            <li class="footer-item my-auto ">
-                                <span class="footer-item-dot "></span>
-                                <span class="footer-item-dot "></span>
-                                <span class="footer-item-dot "></span>
+                            <li class="footer-item my-auto d-flex align-items-center">
+                                <a class="footer-item-dot" href=""><img src="./images/icon/facebook.png" alt=""></a>
+                                <a class="footer-item-dot" href=""><img src="./images/icon/youtube.png" alt=""></a>
+                                <a class="footer-item-dot" href=""><img src="./images/icon/tiktok.png" alt=""></a>
                             </li>
                         </ul>
                     </div>
@@ -361,6 +361,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q " crossorigin="anonymous "></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl " crossorigin="anonymous "></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
 
